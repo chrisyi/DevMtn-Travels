@@ -5,7 +5,10 @@
 					<!-- In the controller get the data from "travelInfo" and assign it to $scope -->
           <!-- Once we have the data we can use {{}} to bind that data to our view -->
           <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the Country-->
-          <img ng-src="" alt="">
+          <img ng-repeat="image in images track by $index" ng-src="{{image.getTravelInfo}}" alt="">
+        
+
+          
         </div>
         <div class="location-inner-left">
             <!-- Now we can start to extract the data and bind it to our different elements here-->

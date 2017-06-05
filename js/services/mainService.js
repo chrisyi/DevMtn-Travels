@@ -1,17 +1,22 @@
 angular.module('devmtnTravel').service('mainSrv', function(){
+
+    this.getTravelInfo = function () {
+        return this.travelInfo;
+    }
+
     this.travelInfo = [{
         country: 'United States',
-        image: "../img/US.jpg",
+        image: "/img/US.jpg",
         desc: 'The U.S. is a country of 50 states covering a vast swath of North America. Major Atlantic Coast cities are New York, and capital Washington, DC',
         price: 1345
     }, {
         country: 'France',
-        image: "../img/France.jpg",
+        image: "/img/France.jpg",
         desc: "France, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower.",
         price: 909
     },{
         country: 'Australia',
-        image: "../img/Australia.jpg",
+        image: "/img/Australia.jpg",
         desc: "Australia is a country and continent surrounded by the Indian and Pacific oceans. Its major cities – Sydney, Brisbane, Melbourne, Perth, Adelaide – are coastal. Its capital, Canberra, is inland. ",
         price: 1112
     }];
